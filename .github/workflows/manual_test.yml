@@ -37,7 +37,7 @@ jobs:
       label: ${{ steps.create-runner.outputs.label }}
     steps:
       - id: create-runner
-        uses: related-sciences/gce-github-runner@main
+        uses: related-sciences/gce-github-runner@008d5e1348dc6f84ab73b7f723b7fb67a9fc706d # v0.14
         with:
           token: ${{ secrets.GH_SA_TOKEN }}
           project_id: ${{ secrets.GCP_PROJECT_ID }}
